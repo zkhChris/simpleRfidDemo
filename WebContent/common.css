@@ -1,0 +1,226 @@
+#bg{
+	background-color:#828282;
+	background-image: url("./index_bg.png");
+	height: 100%;
+	position:relative;
+		margin:0px auto;
+		min-width: 950px;
+		max-width: 1280px;
+		border:0px solid;
+	}
+#contain{
+	height:800px;
+	min-width:1280px;
+}
+#leftPit{
+	background-image:url("./left.jpg");
+	min-height:700px;
+	max-height:900px;
+	width:600px;
+	margin-top:50px;
+	margin-left:100px;
+	float: left;
+}
+#loginbox{
+	float:left;
+	background-color:#4B4A4A;
+	height:351px;
+	width:500px;
+	margin-top:230px;
+}
+#logintitle{
+	font-size:2em;
+	text-align:center;
+	font-weight:800;
+	color:#ffffff;
+	margin-bottom:15px;
+}
+.legend{
+	color:#ffffff;
+	font-weight:bold;
+	font-size:1.1em;
+	margin-bottom:15px;
+}
+.label{
+	    color:#ffffff;
+	    font-size:1.3em;
+	    font-weight:bold;
+	    margin-left:50px;
+	    padding-right:10px;
+		text-align:right;
+		display:inline-block;
+		line-height:30px;
+		width:100px;
+}
+.inputText{
+	    width:230px;
+		margin:5px 0;
+		height:30px;
+		line-height:30px;
+		border:1px solid;
+		border-color:#666;
+		padding:1px;
+}
+.inputText input{
+		border:0;
+		height:30px;
+		line-height:30px;
+		width:100%;
+		}
+
+.button {
+	margin-top:15px;
+	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: 16px/100% 'Microsoft yahei',Arial, Helvetica, sans-serif;
+	padding: .5em 2em .55em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: .5em; 
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.button:hover {
+	text-decoration: none;
+}
+.button:active {
+	position: relative;
+	top: 1px;
+}		
+#main{
+	position:relative;
+	top:200px;
+	left:150px;
+}
+.button button{
+	position:relative;
+}
+#insertMenu{
+	position:absolute;
+	top:220px;
+	left:350px;
+	display:none;
+}
+#editMenu{
+  float:right;
+  display:none;
+  margin-right:100px;
+}
+#showMenu{
+  float:right;
+  margin-right:100px;
+  display:none;
+}
+#selectGroup{
+	position:absolute;
+	top:220px;
+	left:350px;
+	display:none;
+}
+#update{
+	position:absolute;
+	top:220px;
+	left:350px;
+	display:none;
+}
+.insertlabel{
+    height:30px;
+    text-align:right;
+    font-family:'Microsoft yahei';
+    font-weight:600;
+    font-size:1.1em;
+}
+.inputlabel{
+    height:30px;
+    border:0;
+}
+.seButt{
+	margin-top:15px;
+	border-color:#454545;
+	-webkit-border-radius: .5em; 
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	font-family:'Microsoft yahei';
+	font-weight:600;
+	padding:5px;
+	background-color:#ffffff;
+}
+.delete{                     //删除按钮，表格里用
+	background-color:#ffffff;
+	color:#ff0000;
+	font-weight:700;
+	border-width: 1.5px;
+	border-color:#ff3030;
+	padding:3px;
+	padding-left:7px;
+	padding-right:7px;
+	margin:2px;
+}
+.edit{                      //编辑按钮，表格里用
+	background-color:#ffffff;
+	color:#00ff00;
+	font-weight:700;
+	border-width: 1.5px;
+	border-color:#30ff30;
+	padding:3px;
+	padding-left:7px;
+	padding-right:7px;
+	margin:2px;
+}
+.rfidTable{
+	background-color:#000000;
+	border:1px;
+	border-style:solid;
+}
+.rfidTable th{
+    background-color:#9B9A9A;
+    border:1px;
+    border-style:solid;
+    padding:5px 8px 5px 8px;
+    text-align:center;
+    font-weight:700;
+    
+}
+.rfidTable td{
+	background-color:#c0c0c0;
+	padding:5px 8px 5px 8px;
+	font-weight:500;
+	text-align:center;
+}
+#tq{
+	text-align:left;
+}
+#select1{
+  position:absolute;
+  top:100px;
+  right:0px;
+  display:none;
+  margin-right:100px;
+}
+#select2{
+  position:absolute;
+  top:130px;
+  right:0px;
+  display:none;
+  margin-right:100px;
+}
+#select3{
+  position:absolute;
+  top:160px;
+  right:0px;
+  display:none;
+  margin-right:100px;
+}
+#userInfo{
+	position:relative;
+	color:#ffffff;
+	font-weight:700;
+	font-size:1.3em;
+	left:50px;
+	top:50px;
+}
