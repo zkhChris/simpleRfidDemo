@@ -19,8 +19,8 @@
 			<legend class="legend">用户登录</legend>
 			<table id="loginLabel">
 				<tbody>
-					<tr><td><div class="label">用户名：</div></td><td><div class="inputText"><input type="text" id="userName" name="userName" placeholder="请输入用户名" required></div></td></tr>
-					<tr><td><div class="label">密码：</div></td><td><div class="inputText"><input type="password" id="password" name="password" placeholder="请输入密码" required></div></td></tr>
+					<tr><td><div class="label">用户名：</div></td><td><div class="inputText"><input type="text" id="userName" name="userName" placeholder="请输入用户名" required autocomplete="off"></div></td></tr>
+					<tr><td><div class="label">密码：</div></td><td><div class="inputText"><input type="password" id="password" name="password" placeholder="请输入密码" required autocomplete="off"></div></td></tr>
 					<tr><td></td><td><div id="space"><input class="button"  id="loginB" type="submit" value="登录"></div></td> </tr>
 				</tbody>
 			</table>

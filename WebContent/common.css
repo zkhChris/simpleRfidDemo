@@ -1,32 +1,34 @@
 #bg{
-	background-color:#828282;
 	background-image: url("./index_bg.png");
 	height: 100%;
+	width:100%;
 	position:relative;
 		margin:0px auto;
 		min-width: 950px;
-		max-width: 1280px;
 		border:0px solid;
 	}
 #contain{
 	height:800px;
-	min-width:1280px;
+	width:80%;
+	min-width:960px;
+	margin-left:auto;
+	margin-right:auto;
 }
 #leftPit{
 	background-image:url("./left.jpg");
-	min-height:700px;
-	max-height:900px;
-	width:600px;
+	min-height:600px;
+	max-height:750px;
+	width:40%;
 	margin-top:50px;
-	margin-left:100px;
+	margin-left:50px;
 	float: left;
 }
 #loginbox{
 	float:left;
 	background-color:#4B4A4A;
 	height:351px;
-	width:500px;
-	margin-top:230px;
+	width:50%;
+	margin-top:170px;
 }
 #logintitle{
 	font-size:2em;
@@ -95,7 +97,7 @@
 #main{
 	position:relative;
 	top:200px;
-	left:150px;
+	left:8%;
 }
 .button button{
 	position:relative;
@@ -103,29 +105,38 @@
 #insertMenu{
 	position:absolute;
 	top:220px;
-	left:350px;
+	left:35%;
 	display:none;
 }
 #editMenu{
   float:right;
   display:none;
-  margin-right:100px;
+  margin-right:0;
 }
 #showMenu{
   float:right;
-  margin-right:100px;
+  margin-right:7%;
+  display:none;
+}
+#showSelectMenu{
+  float:right;
+  margin-right:7%;
   display:none;
 }
 #selectGroup{
 	position:absolute;
-	top:220px;
-	left:350px;
+	top:170px;
+	left:35%;
 	display:none;
+	border-width:1px;
+	border-color:white;
+	border-style:solid;
+	padding:10px;
 }
 #update{
 	position:absolute;
 	top:220px;
-	left:350px;
+	left:35%;
 	display:none;
 }
 .insertlabel{
@@ -197,24 +208,24 @@
 }
 #select1{
   position:absolute;
-  top:100px;
+  top:50px;
   right:0px;
   display:none;
-  margin-right:100px;
+  margin-right:50px;
 }
 #select2{
+  position:absolute;
+  top:80px;
+  right:0px;
+  display:none;
+  margin-right:50px;
+}
+#select3{
   position:absolute;
   top:130px;
   right:0px;
   display:none;
-  margin-right:100px;
-}
-#select3{
-  position:absolute;
-  top:160px;
-  right:0px;
-  display:none;
-  margin-right:100px;
+  margin-right:50px;
 }
 #userInfo{
 	position:relative;
@@ -223,4 +234,24 @@
 	font-size:1.3em;
 	left:50px;
 	top:50px;
+}
+#selecLa{
+	font-size:1.5em;
+	color:white;
+	font-weight:bold;
+	text-align:center;	
+}
+.noDisplay{
+	display:none;
+}
+.bre{
+	margin-bottom:20px;
+}
+#s1{
+	width:100%;
+}
+#count{
+  float:right;
+  margin-right:7%;
+  display:none;
 }
