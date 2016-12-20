@@ -48,13 +48,12 @@ RFID system java/mysql/js/jquery/html,css
 
   5>统计功能 在这个功能中，设置了若干个统计功能。比如系统中目前的设备数，不同类型的设备数，不同的存放地点的数目，系统中的管理员数目，系统中存放最多型号的设备以及数量，最后一次购买设备的日期。
   
- ##该系统的开发环境：
-   
-     Eclipse j2ee
-     Apache tomcat
-     Jdk8
-     Mysql 
-     chrome
+ ##该系统的开发环境：    
+     Eclipse j2ee  
+     Apache tomcat  
+     Jdk8  
+     Mysql  
+     chrome
      
 使用到的技术栈有html,css,javascript,jquery,java,sql等等
 
