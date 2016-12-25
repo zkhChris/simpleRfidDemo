@@ -9,22 +9,25 @@
 </head>
 <body>
 	<div id="bg">
+	<div id="bar"><div id="barfont">实验室RFID管理系统</div><div style="float=left" id="user">登录</div></div>
 	<div id="contain">
 
-		<div id="leftPit"></div>
+		
 		<div id="loginbox">
-			<p id="logintitle">RFID管理系统登录</p>
+			<p id="logintitle">Login</p>
 			<form action="loginServlet.jsp" method="post"> 
-			<fieldset>
-			<legend class="legend">用户登录</legend>
+			
+		
 			<table id="loginLabel">
 				<tbody>
-					<tr><td><div class="label">用户名：</div></td><td><div class="inputText"><input type="text" id="userName" name="userName" placeholder="请输入用户名" required autocomplete="off"></div></td></tr>
-					<tr><td><div class="label">密码：</div></td><td><div class="inputText"><input type="password" id="password" name="password" placeholder="请输入密码" required autocomplete="off"></div></td></tr>
-					<tr><td></td><td><div id="space"><input class="button"  id="loginB" type="submit" value="登录"></div></td> </tr>
+					<tr><div class="logT">用户名：</div></tr>
+					<tr><div class="inputText"><input type="text" id="userName" name="userName" placeholder="请输入用户名" required autocomplete="off"></div></tr>
+					<tr><div class="logT" >密码：</div></tr>
+					<tr><div class="inputText"><input type="password" id="password" name="password" placeholder="请输入密码" required autocomplete="off"></div></tr>
+					<tr><input class="loginBut"  id="loginB" type="submit" value="login"></div></tr>
 				</tbody>
 			</table>
-			</fieldset>
+			
 			</form>
 		</div>
 

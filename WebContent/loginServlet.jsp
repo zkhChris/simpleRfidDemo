@@ -12,9 +12,8 @@
 	<div id="bg">
 		<div id="contain">
 
-			<div id="leftPit"></div>
 			<div id="loginbox">
-				<p id="logintitle">RFID管理系统登录</p>
+				<p id="logintitle">Login</p>
 				<form action="loginServlet.jsp" method="post">
 					<fieldset>
 						<legend class="legend">用户登录</legend>

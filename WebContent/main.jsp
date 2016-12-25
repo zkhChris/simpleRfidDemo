@@ -13,8 +13,16 @@
 <script src="./jquery-3.1.1.min.js"></script>
 </head>
 <body>
-
-	<div id="bg">
+<%
+					String name = (String) session.getAttribute("userName");
+				%>
+				<%
+					if (name == null) {
+						response.sendRedirect("index.jsp");
+					} 
+				%>
+	<div id="mainbg">
+	<div id="bar"><div id="barfont">实验室RFID管理系统</div>	<div id="user">管理员：<%=name %></div><div id="quit"><a href="quit.jsp"><button id="quitB" >点击退出</button></div></a></div>
 		<div id="contain">
 			<%
 				Class.forName("com.mysql.jdbc.Driver");
@@ -32,19 +40,7 @@
 			<p id="scount" class="noDisplay"><%=count%></p>
 			<p id="snum" class="noDisplay"><%=num%></p>
 
-			<div id="userInfo">
-
-				<%
-					String name = (String) session.getAttribute("userName");
-				%>
-				<%
-					if (name == null) {
-						response.sendRedirect("index.jsp");
-					} else {
-						out.print("您好管理员：" + name + " " + "<a href='quit.jsp'>点击退出</a>");
-					}
-				%>
-			</div>
+		
 
 			<div id="main">
 
@@ -187,27 +183,27 @@
 				var t7="<%=responsiblePerson%>".split(",");
 				t7.pop();
 				</script>
-				<table>
+				<table id="bGroup">
 					<tbody>
 						<tr>
 							<td><input class="button" type="button" id="insert"
-								value="设备录入"></td>
-						</tr>
-						<tr>
-							<td><input class="button" type="button" id="select"
-								value="设备查询"></td>
-						</tr>
-						<tr>
-							<td><input class="button" type="button" id="require"
-								value="设备盘点"></td>
-						<tr>
+								value="设备录入">
+						</td></tr>
+						<tr><td>
+							<input class="button" type="button" id="select"
+								value="设备查询">
+						</td></tr>
+						<tr><td>
+							<input class="button" type="button" id="require"
+								value="设备盘点">
+						</td><tr>
 							<td><input class="button" type="button" id="edit"
-								value="设备编辑"></td>
-						</tr>
-						<tr>
-							<td><input class="button" type="button" id="tongji"
-								value="统计"></td>
-						</tr>
+								value="设备编辑">
+						</td></tr>
+						<tr><td>
+							<input class="button" type="button" id="tongji"
+								value="统计">
+						</td></tr>
 						</tr>
 					</tbody>
 
@@ -287,7 +283,6 @@
 
 			<div id="showMenu">
 				<table class="rfidTable">
-					<p class="legend">从文件中模拟的区域信息</p>
 					<tbody>
 						<tr>
 							<th>RFID标签号</th>
@@ -373,8 +368,7 @@
 						var num=<%=i - 1%>;
 						var arr=new Array();
 					<%for (int p = 1; p < i; p++) {%>
-							var s=new info("<%=f[p][1]%>","<%=f[p][2]%>","<%=f[p][3]%>","<%=f[p][4]%>","<%=f[p][5]%>","<%=f[p][6]%>","<%=f[p][7]%>
-				");
+							var s=new info("<%=f[p][1]%>","<%=f[p][2]%>","<%=f[p][3]%>","<%=f[p][4]%>","<%=f[p][5]%>","<%=f[p][6]%>","<%=f[p][7]%>");
 				arr.push(s);
 			<%}%>
 				console.log(arr);

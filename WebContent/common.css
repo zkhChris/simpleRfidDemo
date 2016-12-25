@@ -1,47 +1,111 @@
+body{
+	font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}
 #bg{
 	background-image: url("./index_bg.png");
-	height: 100%;
 	width:100%;
+	min-height:950px;
+	background-size: 100% 100%;
 	position:relative;
-		margin:0px auto;
-		min-width: 950px;
-		border:0px solid;
+	margin: auto;
+	max-height:1024px;
+	min-width:1024px;
+	min-height:768px;
 	}
+#mainbg{
+	background-image: url("./main.png");
+	width:100%;
+	min-height:950px;
+	background-size: 100% 100%;
+	position:relative;
+	margin: auto;
+	max-height:1024px;
+	min-width:1024px;
+	min-height:768px;
+}
+#bar{
+	background-color:#00ADB5;
+	width:100%;
+	height:50px;
+	margin-right:3px;
+	position:fixed;
+	
+}
+#barfont{
+	float:left;
+	height:35px;
+	color:#eee;
+	font-size:25px;
+	font-weight:bold;
+	margin-top:7px;
+	margin-bottom:8px;
+	margin-left:3%;
+	font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}
+#user{
+	float:left;
+	height:35px;
+	color:#eee;
+	font-size:25px;
+	font-weight:bold;
+	margin-top:7px;
+	margin-bottom:8px;
+	margin-left:15%;
+	font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}
+
+#quit{
+	float:left;
+	
+}
+#quitB{
+	background-color:#eee;
+	height:30px;
+	border:1px;
+	border-color:#eee;
+	border-radius:2px;
+	margin:10px 15px;
+	font-size:0.9em;
+	font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+	width:5em;
+}
 #contain{
 	height:800px;
 	width:80%;
-	min-width:960px;
+	min-width:650px;
 	margin-left:auto;
 	margin-right:auto;
 }
-#leftPit{
-	background-image:url("./left.jpg");
-	min-height:600px;
-	max-height:750px;
-	width:40%;
-	margin-top:50px;
-	margin-left:50px;
-	float: left;
-}
+
 #loginbox{
 	float:left;
-	background-color:#4B4A4A;
-	height:351px;
-	width:50%;
-	margin-top:170px;
+	background-color:#393E46;
+	height:370px;
+	width:430px;
+	margin-top:180px;
+	margin-left:15%;
 }
+
 #logintitle{
 	font-size:2em;
 	text-align:center;
 	font-weight:800;
-	color:#ffffff;
+	color:#eee;
 	margin-bottom:15px;
 }
 .legend{
-	color:#ffffff;
+	color:#000;
 	font-weight:bold;
 	font-size:1.1em;
 	margin-bottom:15px;
+}
+.logT{
+	color:#eee;
+	font-size:1.1em;
+	text-align:left;
+	margin:15px;
+	margin-left:10px;
+	
 }
 .label{
 	    color:#ffffff;
@@ -53,36 +117,56 @@
 		display:inline-block;
 		line-height:30px;
 		width:100px;
+		font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
 }
 .inputText{
-	    width:230px;
-		margin:5px 0;
+	 	background-color:#eee;
+	    width:95%;
+		margin:15px auto;
 		height:30px;
-		line-height:30px;
+		line-height:27px;
 		border:1px solid;
-		border-color:#666;
-		padding:1px;
+		border-color:#eee;
+		padding:3px;
+		border-radius:0.2em;
+		font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}
+.loginBut{
+	width:96%;
+	background-color:#00ADB5;
+	height:35px;
+	border:1px;
+	border-color:#eee;
+	border-radius:3px;
+	margin:30px 2%;
+	color:#eee;
+	font-size:1.1em;
+	font-weight:600;
+	font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
 }
 .inputText input{
 		border:0;
 		height:30px;
 		line-height:30px;
-		width:100%;
+		width:95%;
 		}
 
 .button {
+	background-color:#eee;
 	margin-top:15px;
-	display: inline-block;
 	outline: none;
 	cursor: pointer;
 	text-align: center;
 	text-decoration: none;
-	font: 16px/100% 'Microsoft yahei',Arial, Helvetica, sans-serif;
+	margin-left:12%;
+	font: 16px/100% "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+	font-weight:600;
+	color:393E46;
 	padding: .5em 2em .55em;
 	text-shadow: 0 1px 1px rgba(0,0,0,.3);
-	-webkit-border-radius: .5em; 
-	-moz-border-radius: .5em;
-	border-radius: .5em;
+	-webkit-border-radius: .4em; 
+	-moz-border-radius: .4em;
+	border-radius: .4em;
 	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
 	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
 	box-shadow: 0 1px 2px rgba(0,0,0,.2);
@@ -117,11 +201,13 @@
   float:right;
   margin-right:7%;
   display:none;
+  margin-top:100px;
 }
 #showSelectMenu{
   float:right;
   margin-right:7%;
   display:none;
+  margin-top:20px;
 }
 #selectGroup{
 	position:absolute;
@@ -149,6 +235,7 @@
 .inputlabel{
     height:30px;
     border:0;
+    
 }
 .seButt{
 	margin-top:15px;
@@ -187,21 +274,24 @@
 	background-color:#000000;
 	border:1px;
 	border-style:solid;
+	margin-left:180px;
 }
 .rfidTable th{
     background-color:#9B9A9A;
     border:1px;
     border-style:solid;
-    padding:5px 8px 5px 8px;
+    padding:3px 5px 3px 5px;
     text-align:center;
-    font-weight:700;
+    font-weight:600;
+    font-size:0.9em;
     
 }
 .rfidTable td{
 	background-color:#c0c0c0;
-	padding:5px 8px 5px 8px;
+	padding:3px 5px 3px 5px;
 	font-weight:500;
 	text-align:center;
+	font-size:0.9em;
 }
 #tq{
 	text-align:left;
@@ -237,7 +327,7 @@
 }
 #selecLa{
 	font-size:1.5em;
-	color:white;
+	color:#000;
 	font-weight:bold;
 	text-align:center;	
 }
@@ -253,5 +343,6 @@
 #count{
   float:right;
   margin-right:7%;
+  margin-top:100px;
   display:none;
 }
